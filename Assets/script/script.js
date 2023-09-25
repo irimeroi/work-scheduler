@@ -32,9 +32,3 @@ $(function () {
     //adds current date and time to the header
     $('#currentDay').text(dayjs().format('DD/MM/YYYY - hh:mma'))
   });
-
-
-
-
-
-  //we want the color change happening automatically wo reloading the page
