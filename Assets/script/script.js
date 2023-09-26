@@ -30,5 +30,8 @@ $(function () {
     })
 
     //adds current date and time to the header
-    $('#currentDay').text(dayjs().format('DD/MM/YYYY - hh:mma'))
+    $('#currentDay').text(dayjs().format('DD/MM/YYYY - hh:mm:ssa'))
+    setInterval(function() {
+        $('#currentDay').text(dayjs().format('DD/MM/YYYY - hh:mm:ssa'))
+    },1000)
   });
